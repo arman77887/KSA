@@ -39,7 +39,7 @@ def menu():
 
 def get_target():
     number = input("Enter target number (05XXXXXXXX): ")
-    if number.startswith("01") and len(number) == 11:
+    if number.startswith("05") and len(number) == 10:
         return number, "966" + number[1:]
     else:
         print("Invalid number format.")
